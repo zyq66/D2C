@@ -1,0 +1,20 @@
+{
+  "views": {
+    "explorer": [
+      {
+        "id": "my-vscode-plugin.myView",
+        "name": "My View"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "command": "my-vscode-plugin.myCommand",
+      "title": "My Command",
+      "icon": {
+        "light": "images/light.svg",
+        "dark": "images/dark.svg"
+      }
+    }
+  ]
+}

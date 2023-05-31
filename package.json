@@ -1,0 +1,65 @@
+{
+  "name": "replace-d2c",
+  "displayName": "replace-d2c",
+  "description": "D2C代码替换图片地址",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "icon": "images/icon.png",
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "replace-d2c.replaceImage",
+        "title": "replaceImage",
+        "icon": {
+          "light": "images/light.svg",
+          "dark": "images/dark.svg"
+        }
+      }
+    ]
+  },
+  "extensionKind": [
+    "workspace"
+  ],
+  "enableProposedApi": true,
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@types/babel__core": "^7.20.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.78.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "@vscode/test-electron": "^2.3.0",
+    "eslint": "^8.39.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.22.4",
+    "@babel/plugin-transform-typescript": "^7.21.3",
+    "acorn": "^8.8.2",
+    "axios": "^1.4.0",
+    "jsx-ast-utils": "^3.3.3"
+  }
+}
