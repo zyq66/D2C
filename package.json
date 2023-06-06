@@ -59,7 +59,9 @@
     "@babel/parser": "^7.22.4",
     "@babel/plugin-transform-typescript": "^7.21.3",
     "acorn": "^8.8.2",
+    "antd": "^5.5.2",
     "axios": "^1.4.0",
-    "jsx-ast-utils": "^3.3.3"
+    "jsx-ast-utils": "^3.3.3",
+    "react-sortable-hoc": "^2.0.0"
   }
 }
